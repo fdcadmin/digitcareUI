@@ -97,8 +97,8 @@
 
               <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
-                  <div class="x_title">
-                    <h2>Antenatal Clinic</h2>
+                  <div class="x_title"style="background-color: purple; color: white; padding-top: 5px; padding-left: 8px;">
+                    <h2 >Antenatal Clinic</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -161,6 +161,15 @@
                                           </span>
                           </a>
                         </li>
+                          <li>
+                          <a href="#step-5">
+                            <span class="step_no">5</span>
+                            <span class="step_descr">
+                                              Step 5<br />
+                                              <small>Step 5 description</small>
+                                          </span>
+                          </a>
+                        </li>
                          
                       </ul>
                       <div id="step-1">
@@ -169,21 +178,21 @@
                           <div class="col-md-4">
                           <div class="form-group">
                             <label>Prev. Contraception<span class="text-danger">*</span></label> 
-                            <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="Contraception" readonly="" />
+                            <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="Contraception" />
                             <span asp-validation-for="hospitalnumber"></span>
                           </div>
                       </div>
                            <div class="col-md-4">
                         <div class="form-group">
                           <label>Menarche<span class="text-danger">*</span></label> 
-                          <input type="text" asp-for="hospitalnumber" v required="required" class="form-control" value="Menarche" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" v required="required" class="form-control" value="Menarche" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
                           <label> Menstral Cycle<span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
@@ -192,7 +201,7 @@
                         <div class="form-group">
                           <label>Previous Obstetric Complication</label> 
                           <textarea class="form-control" type="text" class='form-control' name="address"
-                          data-validate-minmax="10,100" required='required' readonly=""></textarea>
+                          data-validate-minmax="10,100" required='required' ></textarea>
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
@@ -205,29 +214,29 @@
                        <div class="col-md-3">
                           <div class="form-group">
                             <label>First Examination Date<span class="text-danger">*</span></label> 
-                            <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="Contraception" readonly="" />
+                            <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="Contraception" />
                             <span asp-validation-for="hospitalnumber"></span>
                           </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
                           <label>B.P<span class="text-danger">*</span></label> 
-                          <input type="text" asp-for="hospitalnumber" v required="required" class="form-control" value="Menarche" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" v required="required" class="form-control" value="Menarche" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
                       <div class="col-md-3">
                         <div class="form-group">
                           <label>A.L.B<span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="Enter value"readonly=""  />
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="Enter value" />
                           <span asp-validation-for="hospitalnumber" ></span>
                         </div>
                       </div>
                        <div class="col-md-3">
                         <div class="form-group">
                           <label>Urine<span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" readonly="" value="Enter value" />
-                          <span asp-validation-for="hospitalnumber" readonly=""></span>
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="Enter value" />
+                          <span asp-validation-for="hospitalnumber" ></span>
                         </div>
                       </div>
 
@@ -235,67 +244,147 @@
                         <div class="form-group">
                           <label>PCV/HA RESULT DATE(S)</label> 
                           <textarea class="form-control" type="text" class='form-control' name="address"
-                          data-validate-minmax="10,100" required='required' readonly="" value="Enter value"></textarea>
+                          data-validate-minmax="10,100" required='required' value="Enter value"></textarea>
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
                       </div>
+
+
                       <div id="step-3">
                         <h2 class="StepTitle">Step 3 Content</h2>
 
                         <div class="col-md-2">
                         <div class="form-group">
                           <label> W.R<span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
                        <div class="col-md-2">
                         <div class="form-group">
                           <label> Height<span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
                       <div class="col-md-2">
                         <div class="form-group">
                           <label> Weight<span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
                       <div class="col-md-2">
                         <div class="form-group">
                           <label> KG<span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="form-group">
                           <label> Position<span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
                       <div class="col-md-2">
                         <div class="form-group">
                           <label> Height of Fundus<span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
                        <div class="col-md-2">
                         <div class="form-group">
                           <label> Engaged?<span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
                        <div class="col-md-2">
                         <div class="form-group">
                           <label> F.H <span class="text-danger">*</span></label>
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" readonly="" />
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
+                          <span asp-validation-for="hospitalnumber"></span>
+                        </div>
+                      </div>
+                       <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Family & SOC. HK</label> 
+                          <textarea class="form-control" type="text" class='form-control' name="address"
+                          data-validate-minmax="10,100" required='required' ></textarea>
+                          <span asp-validation-for="hospitalnumber"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label><small>DOCTOR'S RECOMMENDATON FOR DELIVERY</small></label> 
+                          <textarea class="form-control" type="text" class='form-control' name="address"
+                          data-validate-minmax="10,100" required='required'></textarea>
+                          <span asp-validation-for="hospitalnumber"></span>
+                        </div>
+                      </div>
+                      </div>
+
+<!---------------------------------- Fifth -------------------------------------->
+ <div id="step-5">
+                        <h2 class="StepTitle">Step 3 Content</h2>
+
+                        <div class="col-md-2">
+                        <div class="form-group">
+                          <label> W.R<span class="text-danger">*</span></label>
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
+                          <span asp-validation-for="hospitalnumber"></span>
+                        </div>
+                      </div>
+                       <div class="col-md-2">
+                        <div class="form-group">
+                          <label> Height<span class="text-danger">*</span></label>
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
+                          <span asp-validation-for="hospitalnumber"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label> Weight<span class="text-danger">*</span></label>
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
+                          <span asp-validation-for="hospitalnumber"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label> KG<span class="text-danger">*</span></label>
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
+                          <span asp-validation-for="hospitalnumber"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label> Position<span class="text-danger">*</span></label>
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
+                          <span asp-validation-for="hospitalnumber"></span>
+                        </div>
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-group">
+                          <label> Height of Fundus<span class="text-danger">*</span></label>
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
+                          <span asp-validation-for="hospitalnumber"></span>
+                        </div>
+                      </div>
+                       <div class="col-md-2">
+                        <div class="form-group">
+                          <label> Engaged?<span class="text-danger">*</span></label>
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
+                          <span asp-validation-for="hospitalnumber"></span>
+                        </div>
+                      </div>
+                       <div class="col-md-2">
+                        <div class="form-group">
+                          <label> F.H <span class="text-danger">*</span></label>
+                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" />
                           <span asp-validation-for="hospitalnumber"></span>
                         </div>
                       </div>
@@ -316,6 +405,11 @@
                         </div>
                       </div>
                       </div>
+
+
+<!-------------------------------------------------------------------------------->
+
+
                       <div id="step-4">
                         <h2 class="StepTitle">Step 4 Content</h2>
                         <div class="col-md-6">
