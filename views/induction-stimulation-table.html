@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Antenatal Notes! | </title>
+    <title>Record of Labour! | </title>
 
     <!-- Bootstrap -->
     <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
@@ -105,8 +105,8 @@
 
               <div class="col-md-12 col-sm-12 ">
                 <div class="x_panel">
-                  <div class="x_title"style="background-color: purple; color: white; padding-top: 5px; padding-left: 8px; ">
-                    <h2 >ANTENATAL NOTES</h2>
+                  <div class="x_title"style="background-color: purple; color: white; padding-top: 5px; padding-left: 8px;">
+                    <h2 >INDUCTION STIMULATION TABLE OF LABOUR</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -125,67 +125,98 @@
                     <div class="clearfix"></div>
                   </div>
                   <div class="x_content">
-                    <div  class="form_wizard wizard_horizontal">
-                      <div id="step-1">
-                        
-                       <div class="col-md-5">
-                          <div class="form-group">
-                            <label>Name</label> 
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                            <label>Age</label> 
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                       <div class="col-md-2">
-                          <div class="form-group">
-                            <label>GRAV.</label> 
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                      <div class="col-md-3">
-                          <div class="form-group">
-                            <label>PARA.</label> 
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                       <div class="col-md-3">
-                          <div class="form-group">
-                            <label>Date.</label> 
-                          <input type="date" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                       <div class="col-md-9">
-                          <div class="form-group">
-                            <label>Observation.</label> 
-                          <textarea class="form-control" type="text" class='form-control' name="discharge"
-                          data-validate-minmax="10,100" required='required' value="Enter value"></textarea>
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                      <div class="col-md-12">
-                          <div class="form-group">
-                            <label>Date of Discharge.</label> 
-                          <input type="date" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
 
-                       <div class="col-md-12">
+
+                    <!-- Smart Wizard -->
+                   
+                     <!-- Smart Wizard -->
+                   
+                    <div  class="form_wizard wizard_horizontal">
+                     
+                      <div id="step-1">
+                      <div class="col-md-12">
+                           <div class="row">
+              <div class="col-md-12 col-sm-12 ">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>INDUCTION STIMULATION TABLE</h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Settings 1</a>
+                            <a class="dropdown-item" href="#">Settings 2</a>
+                          </div>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                      <div class="row">
+                          <div class="col-sm-12">
+                            <div class="card-box table-responsive">
+                   
+                    <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th width="14%">TIME</th>
+                          <th width="14%">RATE OF DROPS/MIN</th>
+                          <th width="14%">LENGTH OF CONTRACTION/SEC.</th>
+                          <th width="14%">AGE</th>
+                          <th width="14%">TYPE OF CONTRACTION</th>
+                          <th width="14%">F.H</th>
+                          <th width="14%">MATERIAL</th>
+                           <th width="14%">ANAL GESICS & OTHER REMARK</th>
+                        </tr>
+                      </thead>
+
+
+                      <tbody>
+                        <tr>
+                          <td><input type="text" name="" width="2%"></td>
+                          <td><input type="text" name=""></td>
+                          <td><input type="text" name=""></td>
+                          <td><input type="text" name=""></td>
+                          <td><input type="text" name=""></td>
+                          <td><input type="text" name=""></td>
+                          <td><input type="text" name=""></td>
+                           <td><input type="text" name=""></td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                  </div>
+              </div>
+            </div>
+             <div class="col-md-12">
                          <br>
                          <button value="Submit" class="btn btn-dark">SUBMIT</button>
                           </div>
                       </div>
+                </div>
+              </div>
+                       
+                    </div>
+
+
+                    
+
+
                      
+<!---------------------------------- 4th -------------------------------------->
+                
+                  
+                   
                      
+                       <!----------------------------                ---------->
+
+                       <!----------------------------                ---------->
+                    </div>
                     <!-- End SmartWizard Content -->
                   </div>
                 </div>

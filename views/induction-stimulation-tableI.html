@@ -126,66 +126,35 @@
                   </div>
                   <div class="x_content">
                     <div  class="form_wizard wizard_horizontal">
-                      <div id="step-1">
-                        
-                       <div class="col-md-5">
-                          <div class="form-group">
-                            <label>Name</label> 
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                      <div class="col-md-2">
-                          <div class="form-group">
-                            <label>Age</label> 
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                       <div class="col-md-2">
-                          <div class="form-group">
-                            <label>GRAV.</label> 
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                      <div class="col-md-3">
-                          <div class="form-group">
-                            <label>PARA.</label> 
-                          <input type="text" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                       <div class="col-md-3">
-                          <div class="form-group">
-                            <label>Date.</label> 
-                          <input type="date" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                       <div class="col-md-9">
-                          <div class="form-group">
-                            <label>Observation.</label> 
-                          <textarea class="form-control" type="text" class='form-control' name="discharge"
-                          data-validate-minmax="10,100" required='required' value="Enter value"></textarea>
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
-                      <div class="col-md-12">
-                          <div class="form-group">
-                            <label>Date of Discharge.</label> 
-                          <input type="date" asp-for="hospitalnumber" required="required" class="form-control" value="" />
-                            <span asp-validation-for="hospitalnumber"></span>
-                          </div>
-                      </div>
+                      <table id="datatable" class="table table-striped table-bordered" style="width:100%">
+                      <thead>
+                        <tr>
+                          <th width="14%">TIME</th>
+                          <th width="14%">RATE OF DROPS/MIN</th>
+                          <th width="14%">LENGTH OF CONTRACTION/SEC.</th>
+                          <th width="14%">Age</th>
+                          <th width="14%">TYPE OF CONTRACTION</th>
+                          <th width="14%">F.H</th>
+                          <th width="14%">MATERIAL</th>
+                           <th width="14%">ANAL GESICS & OTHER REMARK</th>
+                        </tr>
+                      </thead>
 
-                       <div class="col-md-12">
-                         <br>
-                         <button value="Submit" class="btn btn-dark">SUBMIT</button>
-                          </div>
-                      </div>
-                     
-                     
+
+                      <tbody>
+                        <tr>
+                          <td><input type="text" name="" width="14%"></td>
+                          <td><input type="text" name=""cols="1"></td>
+                          <td><input type="text" name=""cols="1"></td>
+                          <td><input type="text" name=""cols="1"></td>
+                          <td><input type="text" name=""cols="2"></td>
+                          <td><input type="text" name=""cols="2"></td>
+                          <td><input type="text" name=""cols="2"></td>
+                           <td><input type="text" name=""cols="2"></td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
                     <!-- End SmartWizard Content -->
                   </div>
                 </div>
